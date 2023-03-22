@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>document</title>
+</head>
+<body>
+	<form>
+		<label for="text1">Textfält 1:</label><br>
+		<input type="text" id="text1" name="text1"><br>
+
+		<label for="text2">Textfält 2:</label><br>
+		<input type="text" id="text2" name="text2"><br>
+
+		<input type="button" value="Visa innehållet" onclick="Submit()">
+	</form>
+
+	<script>
+
+		function Submit() {
+			var text1 = document.getElementById("text1").value;
+			var text2 = document.getElementById("text2").value;
+			alert("Textfält 1: " + text1 + "\nTextfält 2: " + text2);
+		}
+	</script>
+</body>
+</html>
